@@ -20,7 +20,10 @@
     "dev": "nodemon"
   },
   "dependencies": {
-    "express": "^5.1.0"
+    "@types/uuid": "^10.0.0",
+    "express": "^5.1.0",
+    "mongoose": "^8.14.2",
+    "uuid": "^11.1.0"
   },
   "devDependencies": {
     "@types/express": "^5.0.1",
