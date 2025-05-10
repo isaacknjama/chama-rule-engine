@@ -25,8 +25,8 @@ export interface Rule {
     description?: string;
     condition: Condition;
     action: Action;
-    isActive: boolean;
     createdAt: Date;
+    isActive: boolean;
     updatedAt: Date;
     schedule?: Schedule; // For scheduled rules
     lastExecuted?: Date;
