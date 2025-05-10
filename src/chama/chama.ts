@@ -11,22 +11,17 @@ interface Chama {
 interface Member {
     id: string;
     name: string;
+    phone?: string;
+    npub?: string;
     role?: MemberRole;
     joinedAt: Date;
-    active: boolean;
-    contactInfo: ContactInfo;
+    verified: boolean;
 }
 
 enum MemberRole {
     ADMIN = 'ADMIN',
-    TREASURER = 'TREASURER',
-    SECRETARY = 'SECRETARY',
     MEMBER = 'MEMBER'
 }
 
-interface ContactInfo {
-    email: string;
-    phone?: string;
-}
 
-export { Chama, Member, MemberRole, ContactInfo };
+export { Chama, Member, MemberRole };
